@@ -6,22 +6,66 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^7.2.1",
+    "popmotion": "^11.0.5",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.54.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
+      "plugin:react/recommended",
+      "airbnb",
+      "airbnb/hooks",
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "prettier"
+    ],
+    "plugins": [
+      "only-warn"
+    ],
+    "rules": {
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ],
+      "default-case": [
+        "error",
+        {
+          "commentPattern": "^No\\sdefault"
+        }
+      ],
+      "arrow-body-style": "off",
+      "no-console": "off",
+      "no-plusplus": [
+        "error",
+        {
+          "allowForLoopAfterthoughts": true
+        }
+      ],
+      "react/function-component-definition": 0,
+      "react/react-in-jsx-scope": "off",
+      "react/require-default-props": [
+        1,
+        {
+          "functions": "ignore"
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +78,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-only-warn": "^1.0.3",
+    "eslint-plugin-react": "^7.31.2",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.7.1"
   }
 }
