@@ -8,6 +8,7 @@ const HeroArrow = (props) => {
   return (
     <motion.div
       id="hero-button"
+      variants={variants.container}
       initial="initial"
       animate="animate"
       whileHover={{ scale: 1.15 }}
@@ -26,7 +27,7 @@ const HeroArrow = (props) => {
           strokeWidth="6.25"
           strokeLinecap="round"
           strokeLinejoin="round"
-          variants={variants}
+          variants={variants.arrow}
         />
         <motion.path
           d="M57 36L36 57L15 36"
@@ -34,7 +35,7 @@ const HeroArrow = (props) => {
           strokeWidth="6.25"
           strokeLinecap="round"
           strokeLinejoin="round"
-          variants={variants}
+          variants={variants.arrow}
         />
       </svg>
     </motion.div>
@@ -43,18 +44,37 @@ const HeroArrow = (props) => {
 
 HeroArrow.propTypes = {
   variants: PropTypes.shape({
-    initial: PropTypes.shape({
-      opacity: PropTypes.number,
-      pathLength: PropTypes.number,
+    container: PropTypes.shape({
+      animate: PropTypes.shape({
+        y: PropTypes.arrayOf(PropTypes.number),
+        transition: PropTypes.shape({
+          y: PropTypes.shape({
+            delay: PropTypes.number,
+            type: PropTypes.string,
+            duration: PropTypes.number,
+            ease: PropTypes.string,
+            repeat: PropTypes.number,
+            repeatType: PropTypes.string,
+            repeatDelay: PropTypes.number,
+          }),
+        }),
+      }),
     }),
 
-    animate: PropTypes.shape({
-      opacity: PropTypes.number,
-      pathLength: PropTypes.number,
-      transition: PropTypes.shape({
-        duration: PropTypes.number,
-        ease: PropTypes.string,
-        delay: PropTypes.number,
+    arrow: PropTypes.shape({
+      initial: PropTypes.shape({
+        opacity: PropTypes.number,
+        pathLength: PropTypes.number,
+      }),
+
+      animate: PropTypes.shape({
+        opacity: PropTypes.number,
+        pathLength: PropTypes.number,
+        transition: PropTypes.shape({
+          duration: PropTypes.number,
+          ease: PropTypes.string,
+          delay: PropTypes.number,
+        }),
       }),
     }),
   }),

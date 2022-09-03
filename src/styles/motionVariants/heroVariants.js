@@ -1,7 +1,7 @@
 const heroVariants = {
   container: {
     initial: {
-      opacity: 0,
+      opacity: 1,
     },
 
     animate: {
@@ -28,18 +28,37 @@ const heroVariants = {
   },
 
   icon: {
-    initial: {
-      opacity: 0,
-      pathLength: 0,
+    container: {
+      animate: {
+        y: [0, -10, 0, -10, 0],
+        transition: {
+          y: {
+            delay: 4,
+            type: 'spring',
+            duration: 1,
+            ease: 'easeInOut',
+            repeat: Infinity,
+            repeatType: 'loop',
+            repeatDelay: 4.5,
+          },
+        },
+      },
     },
 
-    animate: {
-      opacity: 1,
-      pathLength: 1,
-      transition: {
-        duration: 1.5,
-        ease: 'easeInOut',
-        delay: 1.8,
+    arrow: {
+      initial: {
+        opacity: 0,
+        pathLength: 0,
+      },
+
+      animate: {
+        opacity: 1,
+        pathLength: 1,
+        transition: {
+          duration: 1.5,
+          ease: 'easeInOut',
+          delay: 1.8,
+        },
       },
     },
   },
