@@ -1,32 +1,63 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 
-const HeroArrow = () => {
+const HeroArrow = (props) => {
+  const { variants } = props;
+
   return (
-    <div id="hero-button">
+    <motion.div
+      id="hero-button"
+      initial="initial"
+      animate="animate"
+      whileHover={{ scale: 1.15 }}
+      transition={{ type: 'spring', stiffness: 400 }}
+    >
       <svg
-        width="60"
-        height="60"
-        viewBox="0 0 60 60"
+        width="72"
+        height="72"
+        viewBox="0 0 72 72"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M30 12.5V47.5"
+        <motion.path
+          d="M36 15V57"
           stroke="#B4DAF8"
           strokeWidth="6.25"
           strokeLinecap="round"
           strokeLinejoin="round"
+          variants={variants}
         />
-        <path
-          d="M47.5 30L30 47.5L12.5 30"
+        <motion.path
+          d="M57 36L36 57L15 36"
           stroke="#B4DAF8"
           strokeWidth="6.25"
           strokeLinecap="round"
           strokeLinejoin="round"
+          variants={variants}
         />
       </svg>
-    </div>
+    </motion.div>
   );
+};
+
+HeroArrow.propTypes = {
+  variants: PropTypes.shape({
+    initial: PropTypes.shape({
+      opacity: PropTypes.number,
+      pathLength: PropTypes.number,
+    }),
+
+    animate: PropTypes.shape({
+      opacity: PropTypes.number,
+      pathLength: PropTypes.number,
+      transition: PropTypes.shape({
+        duration: PropTypes.number,
+        ease: PropTypes.string,
+        delay: PropTypes.number,
+      }),
+    }),
+  }),
 };
 
 export default HeroArrow;
