@@ -33,7 +33,7 @@ const navVariants = {
       transition: {
         scale: {
           type: 'spring',
-          stiffness: 300,
+          stiffness: 450,
         },
 
         color: {
