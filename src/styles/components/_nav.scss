@@ -13,9 +13,15 @@ nav {
   user-select: none;
 
   #left {
+    position: relative;
     font-size: 2.5rem;
     font-family: base.$fontSecondary;
     font-weight: 500;
+    cursor: pointer;
+
+    #after {
+      display: inline-block;
+    }
 
     span {
       color: base.$secondary;
@@ -28,7 +34,7 @@ nav {
     ul {
       display: flex;
       list-style: none;
-      gap: 1.5ch;
+      gap: 1.8ch;
     }
   }
 }
