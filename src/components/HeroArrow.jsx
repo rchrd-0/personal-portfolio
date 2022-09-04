@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 const HeroArrow = (props) => {
-  const { variants } = props;
+  const { id, variants } = props;
 
   return (
     <motion.div
-      id="hero-button"
+      id={id}
       variants={variants.container}
-      initial="initial"
-      animate="animate"
       whileHover={{ scale: 1.15 }}
       transition={{ type: 'spring', stiffness: 400 }}
     >

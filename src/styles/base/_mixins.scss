@@ -1,0 +1,9 @@
+@use "./typography" as base;
+
+@mixin sectionContainer($flexDirection: "row", $gap) {
+  display: flex;
+  margin: 48px;
+  flex-direction: $flexDirection;
+  gap: $gap;
+  font-family: base.$fontPrimary;
+}

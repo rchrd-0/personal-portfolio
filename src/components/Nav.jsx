@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import '../styles/components/Nav.scss';
 import navVariants from '../styles/motionVariants/navVariants';
 
 const Nav = () => {
@@ -21,7 +22,7 @@ const Nav = () => {
       <div id="right">
         <ul>
           <motion.li variants={navVariants.right} whileHover="hover">
-            <a>About</a>
+            <a>Profile</a>
           </motion.li>
           <motion.li variants={navVariants.right} whileHover="hover">
             <a>Projects</a>

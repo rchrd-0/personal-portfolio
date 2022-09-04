@@ -1,2 +1,10 @@
-@use "./base/" as b;
-@use "./components" as comps;
+@use "./base/" as base;
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: base.$background;
+  color: base.$primary;
+  font-family: base.$fontPrimary;
+}

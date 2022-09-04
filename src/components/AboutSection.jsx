@@ -1,12 +1,12 @@
 import React from 'react';
+
+import '../styles/components/AboutSection.scss';
 import SectionHeader from './SectionHeader';
 
-import '../styles/components/SkillsSection.scss';
-
-const SkillsSection = () => {
+const AboutSection = () => {
   return (
-    <div id="skills">
-      <SectionHeader sectionNum="02" sectionName="Tools & skills" />
+    <div id="about">
+      <SectionHeader sectionNum="01" sectionName="About" />
       <div className="content">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veniam
@@ -19,4 +19,4 @@ const SkillsSection = () => {
   );
 };
 
-export default SkillsSection;
+export default AboutSection;

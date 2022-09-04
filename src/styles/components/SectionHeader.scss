@@ -1,0 +1,27 @@
+@use "../base/" as base;
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 30px;
+
+  .section-num {
+    font-size: 1.3rem;
+    font-family: base.$fontMono;
+    color: base.$secondary;
+    font-weight: 300;
+  }
+
+  .section-name {
+    font-family: base.$fontPrimary;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .line-separator {
+    flex: 1;
+    height: 1px;
+    background: base.$primary;
+  }
+}

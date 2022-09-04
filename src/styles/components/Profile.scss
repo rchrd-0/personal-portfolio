@@ -1,0 +1,5 @@
+@use "../base/" as base;
+
+#profile-container {
+  @include base.sectionContainer($flexDirection: row, $gap: 5%);
+}
