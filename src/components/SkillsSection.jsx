@@ -1,20 +1,17 @@
 import React from 'react';
 import SectionHeader from './SectionHeader';
 
+import SkillsCard from './SkillsCard';
+import SkillIcon from './SkillsIcon';
 import '../styles/components/SkillsSection.scss';
 
 const SkillsSection = () => {
   return (
     <div id="skills">
       <SectionHeader sectionNum="02" sectionName="Tools & skills" />
-      <div className="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veniam
-          laudantium voluptates ea, minima, optio tempore inventore sapiente
-          ipsam vitae ipsa reiciendis architecto dicta a dolorem nulla velit!
-          Soluta, mollitia?
-        </p>
-      </div>
+      <SkillsCard>
+        <SkillIcon skill="html" />
+      </SkillsCard>
     </div>
   );
 };

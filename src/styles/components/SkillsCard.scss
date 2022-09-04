@@ -1,0 +1,13 @@
+@use "../base/" as base;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: base.$layer;
+  border-radius: 8px;
+
+  > div {
+    display: flex;
+  }
+}

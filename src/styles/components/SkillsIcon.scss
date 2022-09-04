@@ -1,0 +1,12 @@
+@use "../base/" as base;
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  img {
+    max-width: 32px;
+    height: auto;
+  }
+}

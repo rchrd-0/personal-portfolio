@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import '../styles/components/SkillsCard.scss';
+
 const SkillsCard = (props) => {
   const { children } = props;
-  return <div />;
+  return <div className="card">{children}</div>;
 };
 
 SkillsCard.propTypes = {
