@@ -3,8 +3,7 @@ import './styles/reset.scss';
 import HeroSection from './components/HeroSection';
 import Nav from './components/Nav';
 import Profile from './components/Profile';
-// import AboutSection from './components/ProfileSection';
-// import SkillsSection from './components/SkillsSection';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -13,6 +12,7 @@ const App = () => {
       <main>
         <Nav />
         <Profile />
+        <Contact />
       </main>
     </div>
   );

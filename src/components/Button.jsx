@@ -10,7 +10,7 @@ const Button = (props) => {
     <motion.button
       type="button"
       whileHover={{
-        backgroundColor: '#f9f3d7',
+        backgroundColor: '#b4daf8',
         color: '#1f2233',
         scale: 1.03,
         transition: {
