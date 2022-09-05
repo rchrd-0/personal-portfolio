@@ -10,6 +10,9 @@ import react from '../assets/icons/icn_react.svg';
 import sass from '../assets/icons/icn_sass.svg';
 import ts from '../assets/icons/icn_typescript.svg';
 import webpack from '../assets/icons/icn_webpack.svg';
+import styled from '../assets/icons/icn_styled.svg';
+import npm from '../assets/icons/icn_npm.svg';
+import tailwind from '../assets/icons/icn_tailwind.svg';
 
 const images = {
   css,
@@ -24,6 +27,9 @@ const images = {
   sass,
   ts,
   webpack,
+  styled,
+  npm,
+  tailwind,
 };
 
 const names = {
@@ -40,7 +46,8 @@ const names = {
   sass: 'Sass',
   styled: 'Styled Components',
   ts: 'TypeScript',
-  webpack: 'webpack',
+  webpack: 'Webpack',
+  tailwind: 'Tailwind',
 };
 
 const getImage = (skill) => images[skill];

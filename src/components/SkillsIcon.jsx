@@ -8,7 +8,7 @@ const SkillIcon = (props) => {
   const { skill } = props;
 
   return (
-    <div>
+    <div className="skill-icon">
       <img src={getImage(skill)} alt={`${getName(skill)} icon`} />
       <span>{getName(skill)}</span>
     </div>

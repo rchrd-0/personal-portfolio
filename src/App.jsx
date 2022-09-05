@@ -1,4 +1,5 @@
 import './styles/main.scss';
+import './styles/reset.scss';
 import HeroSection from './components/HeroSection';
 import Nav from './components/Nav';
 import Profile from './components/Profile';
