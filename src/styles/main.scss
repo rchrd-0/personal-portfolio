@@ -1,9 +1,9 @@
 @use "./base/" as base;
 
 main {
-  // display: flex;
-  // flex-direction: column;
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: base.$background;
   color: base.$primary;
   font-family: base.$fontPrimary;
