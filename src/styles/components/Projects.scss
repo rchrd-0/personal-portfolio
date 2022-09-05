@@ -1,0 +1,44 @@
+@use "../base/" as base;
+
+#projects-container {
+  @include base.sectionContainer($flexDirection: column);
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.project-item {
+  display: flex;
+
+  .preview {
+    flex: 2;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: base.$fontMono;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .button-container {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 5%;
+    }
+  }
+}

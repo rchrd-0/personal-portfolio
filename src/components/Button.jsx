@@ -9,6 +9,7 @@ const Button = (props) => {
   return (
     <motion.button
       type="button"
+      onClick={onClick}
       whileHover={{
         backgroundColor: '#b4daf8',
         color: '#1f2233',

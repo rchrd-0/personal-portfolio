@@ -1,7 +1,7 @@
 @use "../base/" as base;
 
 #contact-container {
-  @include base.sectionContainer($flexDirection: column, $gap: 5%);
+  @include base.sectionContainer($flexDirection: column);
 
   .content {
     display: flex;

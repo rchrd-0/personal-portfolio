@@ -1,10 +1,12 @@
 @use "./base/" as base;
 
-main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: base.$background;
-  color: base.$primary;
-  font-family: base.$fontPrimary;
+#app {
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: base.$background;
+    color: base.$primary;
+    font-family: base.$fontPrimary;
+  }
 }

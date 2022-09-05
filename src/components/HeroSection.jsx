@@ -7,7 +7,7 @@ import heroVariants from '../styles/motionVariants/heroVariants';
 
 const HeroSection = () => {
   return (
-    <div className="layout">
+    <div id="hero">
       <motion.div
         variants={heroVariants.container}
         initial="initial"

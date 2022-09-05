@@ -2,15 +2,16 @@
 
 nav {
   position: sticky;
-  top: 0;
   display: flex;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
   font-family: base.$fontPrimary;
-  background-color: rgba(31, 34, 51, 0.66);
+  background-color: rgba(31, 34, 51, 0.9);
   color: base.$primary;
   user-select: none;
+  z-index: 1;
 
   #left {
     position: relative;
