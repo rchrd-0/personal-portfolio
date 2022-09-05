@@ -1,0 +1,14 @@
+@use "../base/" as base;
+
+button {
+  width: fit-content;
+  font-family: base.$fontMono;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: base.$layer;
+  color: base.$primary;
+  border: 1px solid base.$primary;
+  border-radius: 6px;
+}
