@@ -13,6 +13,14 @@
 .project-item {
   display: flex;
 
+  &.ltr {
+    flex-direction: row;
+  }
+
+  &.rtl {
+    flex-direction: row-reverse;
+  }
+
   .preview {
     flex: 2;
   }

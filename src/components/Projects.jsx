@@ -8,7 +8,7 @@ import getProjects from '../utils/projectMap';
 import '../styles/components/Projects.scss';
 
 const Projects = () => {
-  const [projectList, setProjectList] = useState({});
+  const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
     const projects = getProjects();
@@ -28,8 +28,15 @@ const Projects = () => {
     <SectionContainer id="projects">
       <SectionHeader sectionNum="03" sectionName="Featured projects" />
       <div className="item-wrapper">
-        <ProjectItem projectName="Foo" projectId="foo" direction="right" />
-        <ProjectItem projectName="Bar" projectId="bar" direction="left" />
+        {projectList.map((item, index) => (
+          <ProjectItem
+            key={item.id}
+            url={item.url}
+            name={item.name}
+            desc={item.desc}
+            index={index}
+          />
+        ))}
       </div>
     </SectionContainer>
   );
