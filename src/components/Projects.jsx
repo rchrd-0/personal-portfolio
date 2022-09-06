@@ -1,18 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import SectionContainer from './SectionContainer';
 import SectionHeader from './SectionHeader';
 import ProjectItem from './ProjectItem';
 import importAll from '../utils/importAll';
-import getProject from '../utils/projectMap';
+import getProjects from '../utils/projectMap';
 import '../styles/components/Projects.scss';
 
 const Projects = () => {
-  // useEffect(() => {
-  //   // const imgs = importAll(
-  //   //   require.context('../assets/projectPreviews/', false, /\.(png|jpe?g|svg)$/)
-  //   // );
-  // }, []);
+  const [projectList, setProjectList] = useState({});
+
+  useEffect(() => {
+    const projects = getProjects();
+    const images = importAll(
+      require.context('../assets/projectPreviews/', false, /\.(png|jpe?g|svg)$/)
+    );
+
+    setProjectList(
+      projects.map((obj) => ({
+        ...obj,
+        imgs: [images[obj.id]],
+      }))
+    );
+  }, []);
 
   return (
     <SectionContainer id="projects">

@@ -1,22 +1,26 @@
-const projects = {
-  waldo: {
+const projects = [
+  {
+    id: 'waldo',
     name: 'RetroSearch',
     url: 'search-and-find',
   },
-  shop: {
+  {
+    id: 'shop',
     name: 'Keramikos',
     url: 'shopping-cart',
   },
-  battleship: {
+  {
+    id: 'battleship',
     name: 'Battleship',
     url: 'shopping-cart',
   },
-  todo: {
+  {
+    id: 'todo',
     name: 'ToDoList',
     url: 'todo-list',
   },
-};
+];
 
-const getProject = () => projects;
+const getProjects = () => projects;
 
-export default getProject;
+export default getProjects;

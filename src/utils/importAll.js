@@ -5,6 +5,8 @@ const importAll = (r) => {
     const key = item.replace('./', '').substring(0, item.length - 8);
     key in images ? images[key].push(r(item)) : (images[key] = [r(item)]);
   });
+
+  return images;
 };
 
 export default importAll;
