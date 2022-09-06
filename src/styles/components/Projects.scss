@@ -21,13 +21,10 @@
     flex-direction: row-reverse;
   }
 
-  .preview {
-    flex: 2;
-  }
-
   .details {
     display: flex;
     flex-direction: column;
+    align-self: center;
     flex: 1;
     gap: 1rem;
 
