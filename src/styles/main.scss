@@ -1,6 +1,7 @@
 @use "./base/" as base;
 
 #app {
+  overflow-x: hidden;
   main {
     position: relative;
     display: flex;

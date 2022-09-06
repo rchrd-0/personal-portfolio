@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import PreviewCarousel from './ProjectCarousel';
+import ImageCarousel from './ImageCarousel';
 import Button from './Button';
 
 const ProjectItem = (props) => {
@@ -9,7 +9,7 @@ const ProjectItem = (props) => {
 
   return (
     <div className={`project-item ${index % 2 === 0 ? 'ltr' : 'rtl'}`}>
-      <PreviewCarousel imgs={imgs} />
+      <ImageCarousel imgs={imgs} />
       <div className="details">
         <h2>{name}</h2>
         <p>{desc}</p>

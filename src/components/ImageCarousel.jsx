@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { wrap } from 'popmotion';
 
+import carouselVariants from '../styles/motionVariants/carouselVariants';
 import '../styles/components/ProjectCarousel.scss';
 
-const PreviewCarousel = (props) => {
+const ImageCarousel = (props) => {
   const { imgs } = props;
   const [[page, direction], setPage] = useState([0, 0]);
 
@@ -23,9 +24,25 @@ const PreviewCarousel = (props) => {
       <button type="button" id="right" onClick={() => paginate(1)}>
         right
       </button>
-      <img src={imgs[imgIndex]} alt="" />
+      <AnimatePresence initial={false} custom={direction}>
+        <motion.img
+          key={page}
+          src={imgs[imgIndex]}
+          img={imgs[imgIndex]}
+          variants={carouselVariants}
+          custom={direction}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={carouselVariants.transition}
+        />
+      </AnimatePresence>
     </div>
   );
 };
 
-export default PreviewCarousel;
+ImageCarousel.propTypes = {
+  imgs: PropTypes.arrayOf(PropTypes.string),
+};
+
+export default ImageCarousel;

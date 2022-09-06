@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
           <a href="https://github.com/rchrd-0">
             <img src={github} alt="Github icon" />
-            All projects on GitHub
+            More on GitHub
           </a>
         </div>
       </div>

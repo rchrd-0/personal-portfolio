@@ -3,19 +3,20 @@
 .carousel {
   position: relative;
   flex: 1.5;
-  background-color: red;
   display: grid;
   grid-template-columns: 60px 1fr 60px;
+  grid-template-rows: 1fr;
 
   img {
     grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
     width: 100%;
     height: auto;
   }
 
   button {
     position: absolute;
-
+    z-index: 2;
     &#left {
       grid-column: 1 / span 1;
     }
