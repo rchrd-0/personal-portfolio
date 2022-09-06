@@ -19,7 +19,7 @@ const Projects = () => {
     setProjectList(
       projects.map((obj) => ({
         ...obj,
-        imgs: [images[obj.id]],
+        imgs: images[obj.id],
       }))
     );
   }, []);
@@ -34,6 +34,7 @@ const Projects = () => {
             url={item.url}
             name={item.name}
             desc={item.desc}
+            imgs={item.imgs}
             index={index}
           />
         ))}

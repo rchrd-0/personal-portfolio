@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const ProjectItem = (props) => {
-  const { name, url, desc, index } = props;
+  const { name, url, desc, imgs, index } = props;
 
   return (
     <div className={`project-item ${index % 2 === 0 ? 'ltr' : 'rtl'}`}>
-      <div className="preview">carousel placeholder</div>
+      <div className="preview" />
       <div className="details">
         <h2>{name}</h2>
         <p>{desc}</p>
@@ -35,6 +35,7 @@ ProjectItem.propTypes = {
   name: PropTypes.string,
   url: PropTypes.string,
   desc: PropTypes.string,
+  imgs: PropTypes.arrayOf(PropTypes.string),
   index: PropTypes.number,
 };
 
