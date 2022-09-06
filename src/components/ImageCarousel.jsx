@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { wrap } from 'popmotion';
 
+import ChevronLeft from './ChevronLeft';
+import ChevronRight from './ChevronRight';
 import carouselVariants from '../styles/motionVariants/carouselVariants';
 import '../styles/components/ProjectCarousel.scss';
 
@@ -18,12 +20,8 @@ const ImageCarousel = (props) => {
 
   return (
     <div className="carousel">
-      <button type="button" id="left" onClick={() => paginate(-1)}>
-        left
-      </button>
-      <button type="button" id="right" onClick={() => paginate(1)}>
-        right
-      </button>
+      <ChevronLeft onClick={() => paginate(-1)} />
+      <ChevronRight onClick={() => paginate(1)} />
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}

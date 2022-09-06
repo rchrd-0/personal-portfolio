@@ -4,7 +4,8 @@
   position: relative;
   flex: 1.5;
   display: grid;
-  grid-template-columns: 60px 1fr 60px;
+  grid-template-columns: 50px 1fr 60px;
+  column-gap: 12px;
   grid-template-rows: 1fr;
 
   img {
@@ -12,16 +13,27 @@
     grid-row: 1 / span 1;
     width: 100%;
     height: auto;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
-  button {
+  .chevron {
     position: absolute;
     z-index: 2;
-    &#left {
+    background-color: base.$layer;
+    display: flex;
+    padding: 8px;
+    border-radius: 12px;
+    align-self: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    &.left {
       grid-column: 1 / span 1;
     }
 
-    &#right {
+    &.right {
       grid-column: 3 / span 1;
     }
   }
