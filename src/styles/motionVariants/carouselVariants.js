@@ -1,7 +1,7 @@
 const carouselVariants = {
   initial: (direction) => {
     return {
-      x: direction > 0 ? 150 : -150,
+      x: direction > 0 ? 300 : -300,
       opacity: 0,
     };
   },
@@ -15,7 +15,7 @@ const carouselVariants = {
   exit: (direction) => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 150 : -150,
+      x: direction < 0 ? 300 : -300,
       opacity: 0,
     };
   },
