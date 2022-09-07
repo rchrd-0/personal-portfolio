@@ -16,8 +16,8 @@ const ChevronRight = (props) => {
       onClick={onClick}
     >
       <svg
-        width="30"
-        height="30"
+        width="80%"
+        height="80%"
         viewBox="0 0 60 60"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

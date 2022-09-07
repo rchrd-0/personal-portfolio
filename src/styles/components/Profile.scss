@@ -3,4 +3,9 @@
 #profile-container {
   @include base.sectionContainer($flexDirection: row);
   margin-top: 64px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 64px;
+  }
 }

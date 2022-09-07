@@ -13,6 +13,8 @@ import webpack from '../assets/icons/icn_webpack.svg';
 import styled from '../assets/icons/icn_styled.svg';
 import npm from '../assets/icons/icn_npm.svg';
 import tailwind from '../assets/icons/icn_tailwind.svg';
+import mongo from '../assets/icons/icn_mongodb.svg';
+import express from '../assets/icons/icn_express.svg';
 
 const images = {
   css,
@@ -30,6 +32,8 @@ const images = {
   styled,
   npm,
   tailwind,
+  mongo,
+  express,
 };
 
 const names = {
@@ -48,6 +52,8 @@ const names = {
   ts: 'TypeScript',
   webpack: 'Webpack',
   tailwind: 'Tailwind',
+  mongo: 'MongoDB',
+  express: 'Express',
 };
 
 const getImage = (skill) => images[skill];

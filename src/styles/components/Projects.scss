@@ -7,18 +7,36 @@
 .item-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 80px;
+
+  @media (max-width: 950px) {
+    gap: 50px;
+  }
 }
 
 .project-item {
   display: flex;
+  gap: 0.8rem;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    gap: 3rem;
+  }
 
   &.ltr {
     flex-direction: row;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 
   &.rtl {
     flex-direction: row-reverse;
+
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
   }
 
   .details {

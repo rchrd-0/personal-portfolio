@@ -11,14 +11,21 @@ nav {
   background-color: rgba(31, 34, 51, 0.9);
   color: base.$primary;
   user-select: none;
-  z-index: 1;
+  z-index: 5;
+
+  @media (max-width: 700px) {
+    padding: 10px;
+    justify-content: center;
+  }
 
   #left {
+    flex-shrink: 0;
     position: relative;
     font-size: 2.5rem;
     font-family: base.$fontSecondary;
     font-weight: 500;
     cursor: pointer;
+    margin-right: 2ch;
 
     #after {
       display: inline-block;
@@ -26,6 +33,10 @@ nav {
 
     span {
       color: base.$secondary;
+    }
+
+    @media (max-width: 700px) {
+      display: none;
     }
   }
 
@@ -35,7 +46,11 @@ nav {
     ul {
       display: flex;
       list-style: none;
-      gap: 1.8ch;
+      gap: 2rem;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 1.5rem;
     }
   }
 }

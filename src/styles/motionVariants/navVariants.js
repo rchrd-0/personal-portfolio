@@ -2,6 +2,7 @@ const navVariants = {
   left: {
     hover: {
       scale: 1.1,
+      originX: 0,
     },
 
     after: {

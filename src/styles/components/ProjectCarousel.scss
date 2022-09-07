@@ -2,11 +2,15 @@
 
 .carousel {
   position: relative;
-  flex: 1.5;
+  flex: 2;
   display: grid;
-  grid-template-columns: 50px 1fr 60px;
-  column-gap: 12px;
-  grid-template-rows: 1fr;
+  grid-template-columns: minmax(35px, 6%) 1fr minmax(35px, 6%);
+  column-gap: 0.5rem;
+  align-items: start;
+
+  @media (max-width: 1200px) {
+    flex: 2.5;
+  }
 
   img {
     grid-column: 2 / span 1;
@@ -23,7 +27,8 @@
     z-index: 2;
     background-color: base.$layer;
     display: flex;
-    padding: 8px;
+    justify-content: center;
+    padding: 15%;
     border-radius: 12px;
     align-self: center;
     border: none;
@@ -35,6 +40,9 @@
 
     &.right {
       grid-column: 3 / span 1;
+    }
+
+    > svg {
     }
   }
 }

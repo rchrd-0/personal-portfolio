@@ -1,31 +1,39 @@
 @use "../base/" as base;
 
-.card-wrapper {
+.container {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
 
-  h1 {
-    font-family: base.$fontMono;
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-
-  .card {
+  .card-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 24px;
-    background-color: base.$layer;
-    border-radius: 8px;
-    gap: 2rem;
-    user-select: none;
+    align-items: center;
+    gap: 20px;
 
-    > div {
+    h1 {
+      font-family: base.$fontMono;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .card {
       display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      gap: 20px;
+      flex-direction: column;
+      padding: 24px;
+      background-color: base.$layer;
+      border-radius: 8px;
+      gap: 2rem;
+      user-select: none;
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       Richard Li
       <motion.span
-        initial={{ scale: 1 }}
+        initial={{ scale: 0.5 }}
         animate={{ scale: 2 }}
         transition={{
           scale: {
