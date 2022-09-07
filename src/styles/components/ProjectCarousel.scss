@@ -7,6 +7,7 @@
   grid-template-columns: minmax(35px, 6%) 1fr minmax(35px, 6%);
   column-gap: 0.5rem;
   align-items: start;
+  overflow-x: hidden;
 
   @media (max-width: 1200px) {
     flex: 2.5;
@@ -23,6 +24,8 @@
   }
 
   .chevron {
+    width: 90%;
+    justify-self: center;
     position: absolute;
     z-index: 2;
     background-color: base.$layer;
@@ -40,9 +43,6 @@
 
     &.right {
       grid-column: 3 / span 1;
-    }
-
-    > svg {
     }
   }
 }

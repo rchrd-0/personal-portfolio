@@ -27,6 +27,9 @@ const Button = (props) => {
           },
         },
       }}
+      whileTap={{
+        scale: 1,
+      }}
     >
       {text}
     </motion.button>

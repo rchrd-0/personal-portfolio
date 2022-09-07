@@ -1,7 +1,9 @@
 @use "../base/" as base;
 
-#contact-container {
+#contact {
   @include base.sectionContainer($flexDirection: column);
+
+  // margin-bottom: 64px;
 
   .content {
     display: flex;

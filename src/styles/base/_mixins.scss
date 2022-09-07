@@ -3,11 +3,11 @@
 @mixin sectionContainer($flexDirection, $gap: 5%) {
   display: flex;
   gap: $gap;
-  margin: 48px 5%;
+  padding: 100px 5% 0;
   flex-direction: $flexDirection;
   font-family: base.$fontPrimary;
 
   @media (max-width: 950px) {
-    margin: 32px 5%;
+    padding: 60px 5% 0;
   }
 }

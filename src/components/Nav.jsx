@@ -14,21 +14,23 @@ const Nav = () => {
         initial="initial"
         animate="animate"
       >
-        rchrd<span>.co</span>
-        <motion.span id="after" variants={navVariants.left.after}>
-          des
-        </motion.span>
+        <a href="#hero">
+          rchrd<span>.co</span>
+          <motion.span id="after" variants={navVariants.left.after}>
+            des
+          </motion.span>
+        </a>
       </motion.div>
       <div id="right">
         <ul>
           <motion.li variants={navVariants.right} whileHover="hover">
-            <a>Profile</a>
+            <a href="#profile">Profile</a>
           </motion.li>
           <motion.li variants={navVariants.right} whileHover="hover">
-            <a>Projects</a>
+            <a href="#projects">Projects</a>
           </motion.li>
           <motion.li variants={navVariants.right} whileHover="hover">
-            <a>Contact</a>
+            <a href="#contact">Contact</a>
           </motion.li>
         </ul>
       </div>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const SectionContainer = (props) => {
   const { id, children } = props;
-  return <div id={`${id}-container`}>{children}</div>;
+  return <div id={`${id}`}>{children}</div>;
 };
 
 SectionContainer.propTypes = {

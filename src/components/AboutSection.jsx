@@ -5,6 +5,10 @@ import SectionHeader from './SectionHeader';
 import Button from './Button';
 
 const AboutSection = () => {
+  function scrollContact() {
+    window.location = '#contact';
+  }
+
   return (
     <div id="about">
       <SectionHeader sectionNum="01" sectionName="About" />
@@ -18,7 +22,7 @@ const AboutSection = () => {
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, fuga?
         </p>
-        <Button text="get in touch" />
+        <Button text="get in touch" onClick={() => scrollContact()} />
       </div>
     </div>
   );

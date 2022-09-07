@@ -1,6 +1,6 @@
 @use "../base/" as base;
 
-#projects-container {
+#projects {
   @include base.sectionContainer($flexDirection: column);
 }
 

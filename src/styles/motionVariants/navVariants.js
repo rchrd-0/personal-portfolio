@@ -8,15 +8,15 @@ const navVariants = {
     after: {
       initial: {
         opacity: 0,
-        y: '-150%',
+        x: '-200%',
       },
 
       hover: {
         opacity: 1,
-        y: 0,
+        x: 0,
 
         transition: {
-          y: {
+          x: {
             type: 'spring',
             stiffness: 200,
             mass: 0.5,

@@ -13,8 +13,8 @@ const Contact = () => {
       <div className="content">
         <p>I&#8217;m currently looking for a role as a front-end developer.</p>
         <p>
-          If you&#8217;d like to get in touch (or even just a friendly chat),
-          please feel free to reach out to me!
+          If you&#8217;d like to get in touch (even for just a friendly chat),
+          feel free to reach out to me!
         </p>
         <div id="contact-links">
           <div>

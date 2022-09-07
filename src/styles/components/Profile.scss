@@ -1,8 +1,7 @@
 @use "../base/" as base;
 
-#profile-container {
+#profile {
   @include base.sectionContainer($flexDirection: row);
-  margin-top: 64px;
 
   @media (max-width: 900px) {
     flex-direction: column;
