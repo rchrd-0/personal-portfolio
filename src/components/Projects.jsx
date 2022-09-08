@@ -42,7 +42,8 @@ const Projects = () => {
                 <span className="highlight">Styled Components</span>,{' '}
                 <span className="highlight">Framer Motion</span> &{' '}
                 <span className="highlight">Firebase</span>
-                &#8217;s Cloud Firestore for the back-end.
+                &#8217;s Cloud Firestore on the back-end, handling answer
+                validation and highscores.
               </p>
             </ProjectItem>
             <ProjectItem project={thisProject('shop')} index="left">
@@ -53,14 +54,14 @@ const Projects = () => {
               <p>
                 Built with <span className="highlight">React</span>,{' '}
                 <span className="highlight">Styled Components</span> &{' '}
-                <span className="highlight">Framer Motion</span>
+                <span className="highlight">Framer Motion</span>.
               </p>
             </ProjectItem>
             <ProjectItem project={thisProject('battleship')} index="right">
               <p>
                 Vanilla <span className="highlight">JavaScript</span>{' '}
                 implementation of the Battleship game built with test-first
-                development in mind{' '}
+                development in mind.
               </p>
               <p>
                 Built with <span className="highlight">JavaScript</span>,{' '}

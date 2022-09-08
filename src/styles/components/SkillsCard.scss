@@ -15,7 +15,7 @@
 
     h1 {
       font-family: base.$fontMono;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 500;
     }
 
@@ -27,6 +27,7 @@
       border-radius: 8px;
       gap: 2rem;
       user-select: none;
+      font-size: 1.1rem;
 
       > div {
         display: flex;
@@ -38,6 +39,7 @@
       @media (max-width: 400px) {
         padding: 16px;
         gap: 20px;
+        font-size: 1rem;
       }
     }
   }

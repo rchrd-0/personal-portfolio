@@ -7,11 +7,13 @@ footer {
   display: flex;
   justify-content: center;
   background-color: rgba(31, 34, 51, 0.66);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: base.$fontMono;
+  font-weight: 500;
   padding: 10px 20px;
   border-radius: 8px;
   gap: 1ch;
+  user-select: none;
 
   span {
     color: base.$secondary;
