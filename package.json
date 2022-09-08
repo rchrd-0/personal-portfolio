@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rchrd.co",
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -86,6 +87,5 @@
     "eslint-plugin-react": "^7.31.2",
     "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
-  },
-  "homepage": "http://rchrd.co"
+  }
 }

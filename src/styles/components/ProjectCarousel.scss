@@ -4,7 +4,7 @@
   position: relative;
   flex: 2;
   display: grid;
-  grid-template-columns: minmax(35px, 6%) 1fr minmax(35px, 6%);
+  grid-template-columns: 2px minmax(35px, 6%) 1fr minmax(35px, 6%) 2px;
   grid-template-rows: 16px 1fr 16px;
   row-gap: 10px;
   column-gap: 0.5rem;
@@ -17,7 +17,7 @@
   }
 
   img {
-    grid-column: 2 / span 1;
+    grid-column: 3 / span 1;
     grid-row: 2 / span 1;
     align-self: center;
     justify-self: center;
@@ -44,11 +44,11 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
     &.left {
-      grid-column: 1 / span 1;
+      grid-column: 2 / span 1;
     }
 
     &.right {
-      grid-column: 3 / span 1;
+      grid-column: 4 / span 1;
     }
   }
 }
