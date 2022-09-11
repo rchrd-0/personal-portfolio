@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a2420e73.css",
-    "main.js": "/static/js/main.43aed7f3.js",
+    "main.js": "/static/js/main.be2576cd.js",
     "static/media/shop-0.png": "/static/media/shop-0.2ebf7ff8b85367f6b0ac.png",
     "static/media/waldo-2.png": "/static/media/waldo-2.62166bd049b82f15dd96.png",
     "static/media/shop-1.png": "/static/media/shop-1.8291485c97dd08effffe.png",
@@ -10,8 +10,10 @@
     "static/media/waldo-1.png": "/static/media/waldo-1.a80419c0f7c31e3f1c6f.png",
     "static/media/battleship-1.png": "/static/media/battleship-1.9208140a27d635e77640.png",
     "static/media/battleship-0.png": "/static/media/battleship-0.fbc5722237d817ec0c32.png",
+    "static/media/cv-0.png": "/static/media/cv-0.ea55319b8854f4dd4b5c.png",
     "static/media/todo-0.png": "/static/media/todo-0.26ebe829313a3e053e89.png",
     "static/media/todo-1.png": "/static/media/todo-1.4d7748ab90ef5a6f2d60.png",
+    "static/media/cv-1.png": "/static/media/cv-1.86be2bd4c21e38b74f25.png",
     "static/media/icn_sass.svg": "/static/media/icn_sass.8265ec2824366b5fbfc8eb51db188d38.svg",
     "static/media/icn_react.svg": "/static/media/icn_react.cb7bc74b8d8b3ec6ba5a2f449bc20c37.svg",
     "static/media/icn_jest.svg": "/static/media/icn_jest.bc8b8dcdcb35c04e9825578fb719f562.svg",
@@ -33,10 +35,10 @@
     "static/media/icn_email.svg": "/static/media/icn_email.09deb4195aaeffdadd9d044fe3033636.svg",
     "static/media/icn_framer.svg": "/static/media/icn_framer.3a2d7f6cdb8ae8c63f24e9113e363127.svg",
     "main.a2420e73.css.map": "/static/css/main.a2420e73.css.map",
-    "main.43aed7f3.js.map": "/static/js/main.43aed7f3.js.map"
+    "main.be2576cd.js.map": "/static/js/main.be2576cd.js.map"
   },
   "entrypoints": [
     "static/css/main.a2420e73.css",
-    "static/js/main.43aed7f3.js"
+    "static/js/main.be2576cd.js"
   ]
 }
