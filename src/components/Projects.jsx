@@ -57,7 +57,19 @@ const Projects = () => {
                 <span className="highlight">Framer Motion</span>.
               </p>
             </ProjectItem>
-            <ProjectItem project={thisProject('battleship')} index="right">
+            <ProjectItem project={thisProject('cv')} index="right">
+              <p>
+                A CV creation <span className="highlight">React</span> app that
+                exports the preview to an A4 PDF using{' '}
+                <span className="highlight">html2canvas</span> &{' '}
+                <span className="highlight">jsPDF</span>.
+              </p>
+              <p>
+                Built with <span className="highlight">React</span> &{' '}
+                <span className="highlight">Styled Components</span>.
+              </p>
+            </ProjectItem>
+            <ProjectItem project={thisProject('battleship')} index="left">
               <p>
                 Vanilla <span className="highlight">JavaScript</span>{' '}
                 implementation of the Battleship game built with test-first
@@ -69,7 +81,7 @@ const Projects = () => {
                 <span className="highlight">Jest</span>.
               </p>
             </ProjectItem>
-            <ProjectItem project={thisProject('todo')} index="left">
+            <ProjectItem project={thisProject('todo')} index="right">
               <p>
                 Simple to-do list app built as a personal exercise to work with
                 <span className="highlight"> ES6 modules</span>,{' '}

@@ -19,6 +19,11 @@ const projects = [
     name: 'ToDoList',
     url: 'todo-list',
   },
+  {
+    id: 'cv',
+    name: 'CV App',
+    url: 'cv-project',
+  },
 ];
 
 const getProjects = () => projects;
