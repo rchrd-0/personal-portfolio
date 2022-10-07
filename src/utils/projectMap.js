@@ -22,7 +22,7 @@ const projects = [
   {
     id: 'cv',
     name: 'CV App',
-    url: 'cv-project',
+    url: 'cv-app',
   },
 ];
 
