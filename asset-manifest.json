@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a2420e73.css",
-    "main.js": "/static/js/main.be2576cd.js",
+    "main.js": "/static/js/main.f028bf6b.js",
     "static/media/shop-0.png": "/static/media/shop-0.2ebf7ff8b85367f6b0ac.png",
     "static/media/waldo-2.png": "/static/media/waldo-2.62166bd049b82f15dd96.png",
     "static/media/shop-1.png": "/static/media/shop-1.8291485c97dd08effffe.png",
@@ -35,10 +35,10 @@
     "static/media/icn_email.svg": "/static/media/icn_email.09deb4195aaeffdadd9d044fe3033636.svg",
     "static/media/icn_framer.svg": "/static/media/icn_framer.3a2d7f6cdb8ae8c63f24e9113e363127.svg",
     "main.a2420e73.css.map": "/static/css/main.a2420e73.css.map",
-    "main.be2576cd.js.map": "/static/js/main.be2576cd.js.map"
+    "main.f028bf6b.js.map": "/static/js/main.f028bf6b.js.map"
   },
   "entrypoints": [
     "static/css/main.a2420e73.css",
-    "static/js/main.be2576cd.js"
+    "static/js/main.f028bf6b.js"
   ]
 }
